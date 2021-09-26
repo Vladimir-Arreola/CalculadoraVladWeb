@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora Vlad</h1>
+    <div class="calcu">
+        <div class="visor" id="visor"></div>
+
+        <div class="contenedorBotones">
+            <div class="numeros flex-column">
+
+                <div>
+                    <button class="btn" id="btn7" onclick="agregaNumero(7)">7</button>
+                    <button class="btn" id="btn8"  onclick="agregaNumero(8)">8</button>
+                    <button class="btn" id="btn9" onclick="agregaNumero(9)">9</button>
+                </div>
+                <div>
+                    <button class="btn" onclick="agregaNumero(4)">4</button>
+                    <button class="btn" onclick="agregaNumero(5)">5</button>
+                    <button class="btn" onclick="agregaNumero(6)">6</button>
+                </div>
+                <div>
+                    <button class="btn" onclick="agregaNumero(1)">1</button>
+                    <button class="btn" onclick="agregaNumero(2)">2</button>
+                    <button class="btn" onclick="agregaNumero(3)">3</button>
+                </div>
+                <div id="fila-cero">
+                    <button class="btn" onclick="agregaNumero(0)">0</button> 
+                    <button class="btn" onclick="resultados()">=</button>
+                </div>
+            </div>
+                <div class="operaciones flex-column">
+                    <button class="btn btnOperacion" onclick="realizaOperacion('C')">C</button> 
+                    <button class="btn btnOperacion" onclick="realizaOperacion('/')">/</button> 
+                    <button class="btn btnOperacion" onclick="realizaOperacion('x')">x</button>
+                    <button class="btn btnOperacion" onclick="realizaOperacion('-')">-</button> 
+                    <button class="btn btnOperacion" onclick="realizaOperacion('+')">+</button> 
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

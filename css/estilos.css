@@ -1,0 +1,55 @@
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.calcu{
+    width: 380px;
+    background-color: rgb(39, 39, 39);
+    border: 1px solid black;
+}
+
+.visor{
+    height: 100px;
+    background-color: rgb(243, 243, 243);
+    text-align: right;
+    font-size: 70px;
+}
+
+
+.contenedorBotones{
+    display: flex;
+    padding: 10px 5px;
+}
+
+
+.numeros{
+    width: 75%;
+}
+
+.operaciones{
+    width: 25%;
+}
+
+.btn{
+    width: 30%;
+    height: 50px;
+    font-weight: bold;
+    background-color: rgb(212, 17, 212);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnOperacion{
+    width: 100%;
+    height: 40px;
+}
+
+.btn:hover{
+    background-color: rgb(145, 15, 145);
+}
+
